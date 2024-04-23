@@ -1,4 +1,4 @@
-{% macro athena__equal_rowcount(model, compare_model, group_by_columns) %}
+{% macro athena__test_equal_rowcount(model, compare_model, group_by_columns) %}
 
 {#-- Needs to be set at parse time, before we return '' below --#}
 {{ config(fail_calc = 'sum(coalesce(diff_count, 0))') }}
